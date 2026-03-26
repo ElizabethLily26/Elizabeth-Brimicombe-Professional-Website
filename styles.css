@@ -1,0 +1,185 @@
+/*Design for ipad, mobile, desktop */
+@media (max-width: 600px){
+ #Gallery{
+    flex-direction: column;
+    display: inline-block;
+    width: 100%;
+    margin: 10px;
+ }
+ #TopBox{
+    flex-direction:column;
+ }
+}
+
+/*Universal */
+*{
+    margin: 5px;
+}
+/* Flexboxes */
+#TopBox{
+    display: flex;
+    background-color: rgb(229, 96, 174);
+    width: 100%;
+    min-height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+/* Child */
+#TopBox > nav > a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+/* Sibling */
+label ~ input{
+    font-weight: bold;
+}
+/* Hover */
+#TopBox > nav > a:hover{
+    color: pink;
+}
+#HeroImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+/* Hero Image with border/padding/margins */
+#HeroImage{
+    width: 100%;
+    height: auto;
+    border: 5px solid rgb(229, 96, 174);
+    padding: 0px;
+    margin: 5px;
+
+}
+
+/* Multiple */
+#TopText > h1, #TopText > p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+/* Adjacent Sibling */
+h1 + p{
+    font-size: 20px;
+}
+
+/* Footer */
+#Footer{
+    background-color:rgb(229, 96, 174);
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+}
+/* Child */
+footer > p{
+    font-size: 15px;
+    color: white;
+    display: flex;
+}
+#Gallery{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+/* Gallery images with border/padding/margins */
+.GalleryItem1, .GalleryItem2{
+    display: flex;
+    width: 700px;
+    height: 300px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 5px solid pink;
+    padding: 10px;
+    justify-content: space-around;
+}
+#AboutMeBox{
+     margin-top: 20px;
+    border: 5px solid pink;
+    padding:10px;
+    justify-content: space-around;
+    display:flex;
+    flex-wrap: wrap;
+
+}
+/* Table Container*/
+#SkillBox{
+    border-collapse: collapse;
+    padding: 10px;
+    display: flex;
+
+}
+#SkillBox > h1{
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(139, 8, 87);
+    font-size: 50px;
+    padding-right: 30px;
+}
+td,th{
+    color: rgb(139, 8, 87);
+    border-bottom: 1px solid pink;
+    border-right: 1px solid pink;
+    border-left: 1px solid pink;
+    border-top: 1px solid pink;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+th{
+    background-color: pink;
+}
+#HobbyBox{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display:flex;
+}
+#HobbyBox > h1{
+    color: rgb(139, 8, 87);
+    text-align: right;
+    font-size: 50px;
+    padding-right: 30px;
+}
+#HobbyBox > ul{
+    color: rgb(139, 8, 87);
+    border-left: 1px solid pink;
+    border-bottom: 1px solid pink;
+    border-top: 1px solid pink;
+    border-right: 1px solid pink;
+    padding: 30px;
+}
+#UnderBox{
+    color: rgb(139, 8, 87);
+    margin-bottom: 20px;
+    margin-top:10px;
+    text-align: center;
+    list-style-position: inside;
+}
+#UnderBox a{
+    color: rgb(139, 8, 87);
+}
+
+/*form*/
+#FormGrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+#FormGrid > h1{
+    color: rgb(139, 8, 87);
+    padding-top: 10px;
+    padding-left: 10px;
+}
+/* Attribute */
+input[type="text"], textarea{
+    border: 2px solid black;
+}
+#TopText > p::first-line{
+    font-style: italic;
+}
